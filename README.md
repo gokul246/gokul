@@ -1,15 +1,17 @@
 #include <stdio.h>
- 
+#include<conio.h> 
 void main()
 {
-    int num;
+    int i;
  
     printf("Enter a number: \n");
-    scanf("%d", &num);
-    if (num > 0)
-        printf("%d is a positive number \n", num);
-    else if (num < 0)
-        printf("%d is a negative number \n", num);
-    else
+    scanf("%d", &i);
+    if (i > 0)
+        printf("%d is positive number \n", i);
+    else if (i < 0)
+        printf("%d is negative number \n", i);
+    
         printf("0 is neither positive nor negative");
+  
+        getch();
 }
