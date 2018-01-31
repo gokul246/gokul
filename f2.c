@@ -1,17 +1,13 @@
-
+#include <stdio.h>
 #include<stdio.h>
- #include<stdio.h>
-int main()
+ int main()
 {
-   int n;
- 
-   printf("Enter an integer: ");
-   scanf("%d",&n);
- 
-   if ( n & 1)
-      printf("%d is an odd number", n);
-   else
-      printf("%d is an even number", n);
- 
-   return 0;
+  char b;
+  printf("Enter a character\n");
+  scanf("%c", &b);
+  if (b == 'a' || b == 'A' || b== 'e' || b== 'E' || b == 'i' || b == 'I' || b =='o' || b=='O' || b== 'u' || b== 'U')
+    printf("%c is a vowel.\n", b);
+  else
+    printf("%c is not a vowel.\n", b);
+  return 0;
 }
